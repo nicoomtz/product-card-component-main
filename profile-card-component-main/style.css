@@ -1,0 +1,126 @@
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--Dark-cyan);
+}
+
+h1,
+h3,
+p {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.flex {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.card {
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    margin: 0px 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 1px var(--Dark-gray);
+}
+
+.card-header {
+    width: 100%
+}
+
+.card-body img {
+    display: block;
+    position: relative;
+    margin: -57px auto 0px auto;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card-body-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 25px 0px 0px 0px;
+}
+
+.card-body-age {
+    font-weight: 400;
+    color: var(--Dark-gray)
+}
+
+.card-body-text {
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+    color: var(--Dark-gray);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card-footer {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.card-footer-likes,
+.card-footer-followers,
+.card-footer-photos {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 30px auto 30px auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card-footer-likes p,
+.card-footer-followers p,
+.card-footer-photos p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--Dark-gray);
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+
+    .flex {
+        font-family: 'Kumbh Sans', sans-serif;
+        background-color: var(--dark-cyan);
+        background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    }
+
+    .card {
+        width: 30em;
+    }
+
+    .card-footer-likes,
+    .card-footer-followers,
+    .card-footer-photos {
+        margin: 30px auto 30px auto;
+        padding: 0px 20px;
+    }
+}
